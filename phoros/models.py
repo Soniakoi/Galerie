@@ -7,3 +7,11 @@ class Image(models.Model):
     description = models.TextField()
     # location = models.Foreignkey(Location)
     # category = models.ForeignKey(Category)
+
+
+class Location(models.Model):
+  name = models.CharField(max_length = 30)    
+
+
+  def __str__(self):
+    return self.name
