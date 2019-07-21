@@ -3,7 +3,7 @@ from django.http import HttpResponse, Http404
 
 # Create your views here.
 def welcome(request):
-    return HttpResponse('Welcome!')
+    return render(request,'welcome.html')
 
 def gallery(request):
   all_images = Image.objects.all()
