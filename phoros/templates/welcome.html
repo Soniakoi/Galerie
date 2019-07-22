@@ -7,10 +7,8 @@
 
   <div class="hover">
     <div class="col-md-3">
-      <img style="height:260px;width: 290px;padding: 5px;" src="{{image.image.url}}" alt="Image">
-      <div class="overlay">
-        <p class="mimi"><a data-toggle="modal" data-target="#{{image.id}}">{{image.name}}</a></p>
-      </div>
+      <a data-toggle="modal" data-target="#{{image.id}}"><img style="height:260px;width: 290px;padding: 5px;" src="{{image.image.url}}" alt="Image"></a>
+      
     </div>
   </div>
   {% empty %}
@@ -36,15 +34,8 @@
               <p><em>{{image.description}}</em></p>
               <small class="small"><strong>Posted :</strong> <span
                   class="font-weight-bold">{{image.post_date|timesince}}</span> ago </small>
-              <br><small class="small"><strong>Category :</strong> <span
-                  class="font-weight-bold">{{image.category.photo_category}}</span></small>
-              <ul class="list-inline">
-                <!-- <li class="list-inline-item"> <strong>Share :</strong>
-                  <a class="twitter-share-button" class="tooltip-test" title="Share on Twitter"
-                    href="https://twitter.com/intent/tweet?text={{img.image.url}}" target="_blank">
-                    <i class="fa fa-twitter fa-1x"></i>
-                  </a> -->
-                </li>
+               
+                 
               </ul>
             </div>
           </div>
