@@ -5,10 +5,10 @@ from django.conf.urls.static import static
 
 urlpatterns=[
     url('^$',views.welcome,name = 'galerie'),
-    url(r'^image/(\d+)',views.image,name='image'),
-   url(r'^search/',views.search_images,name='search_images'),
-   url(r'^gallery/',views.gallery,name='gallery'),
-   url(r'^location/(\w+)',views.image_location,name='location')
+    url(r'^pics(\d+)',views.pics,name='pics'),
+    url(r'^search/',views.search_pics,name='search_pics'),
+    url(r'^photos/',views.photos,name='photos'),
+    url(r'^location/(\w+)',views.pics_location,name='location')
 ]
 
 if settings.DEBUG:
