@@ -24,13 +24,8 @@ def search_pics(request):
     search_term = request.GET.get('category')
     searched_pics = Image.search_by_category(search_term)
     
-    message = f'{search_term}'
-
-    return render(request,'all-phoros/pics.html',{"message":message, "all_images":searched_pics})
-
-  else:
-    message = "You haven't searched for any term."
-    return render(request,'all-phoros/photos.html',{"message":message})
+    
+    return render(request,'all-phoros/search.html',{"category":search_term})
 
 def pics_location(request,location):
   pics =  Pics.objects.all()
