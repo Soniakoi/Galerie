@@ -18,6 +18,9 @@ This is a gallery web application that showcase images collected and stored. The
 |all images        | navbar home  | view all images          |
 ## Set-up.
 
+## Link to my site.
+https://tgalerie.herokuapp.com/
+
 
 ## clone this repository
 
